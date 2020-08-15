@@ -1,0 +1,16 @@
+%%writefile myfile.txt
+Hello this is a text file
+This is the second line
+Here's the third line
+#.open('') opens doc
+--For Windows use \\ so it isn't
+seen as an escape character
+--Put in path if not in pwd
+#.read() reads contents of text
+#.seek() moves cursor to space based on document
+#.readlines() separates lines
+#.close() closes file
+
+tester = open('test.txt','w')
+tester.write('Hello World')
+tester.close()
